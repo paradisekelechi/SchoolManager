@@ -78,8 +78,10 @@ class Student extends User{
     getUserType(){
         return 'STUDENT';
     }
-    changeAge(newAge){
+    setAge(newAge){
         this.age = newAge;
     }
-
+    etStudentClass(newClass){
+        this.studentClass = newClass;
+    }
 }
