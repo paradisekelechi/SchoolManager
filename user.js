@@ -1,6 +1,6 @@
 'use strict';
 
-class User {
+module.exports = class User {
     constructor(firstname, lastname, emailAddress, phoneNumber){
         this.firstname = firstname;
         this.lastname = lastname;
@@ -23,8 +23,8 @@ class User {
     getPhoneNumber(){
         return this.phoneNumber;
     }
-}
 
-let skipo = new User('Paradise', 'Kelechi', 'paradisekelechi@gmail.com', '07066748872');
-let myName = skipo.getFirstname();
-console.log(myName);
+    showCredentials(){
+        console.log('This is '+ this.firstname + ' ' + this.lastname+'. Email Address: '+' '+this.emailAddress+'. Phone Number: '+this.phoneNumber);
+    }
+}
